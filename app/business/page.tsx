@@ -147,7 +147,7 @@ const BusinessPage = () => {
           </div>
         </section>
 
-        <section ref={pricingRef} id="planes" className="relative py-20 bg-blue-600 text-white overflow-hidden">
+        <section ref={pricingRef} id="planes" className="hero relative min-h-screen flex items-center justify-center bg-blue-600 text-white overflow-hidden">
           <FloatingLightningBolts isVisible={isPricingVisible} boltCount={50} />
           <div className="container mx-auto px-6 relative z-10">
             <h2 className="text-3xl font-bold text-center mb-12">Nuestros Planes</h2>
@@ -195,7 +195,7 @@ const BusinessPage = () => {
           </div>
         </section>
 
-        <section ref={ctaRef} id="contacto" className="relative py-20 bg-blue-600 text-white overflow-hidden">
+        <section ref={ctaRef} id="contacto" className="hero relative min-h-screen flex items-center justify-center bg-blue-600 text-white overflow-hidden">
           <FloatingLightningBolts isVisible={isCtaVisible} boltCount={50} />
           <div className="container mx-auto px-6 text-center relative z-10">
             <motion.h2
@@ -234,7 +234,7 @@ const BusinessPage = () => {
                 </div>
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-white mb-1">Teléfono móvil</label>
-                  <input type="tel" id="phone" name="phone" className="w-full px-3 py-2 border border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-white text-blue-800" required />
+                  <input type="tel" id="phone" name="phone" className="w-full px-3 py-2 mb-4 border border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-white text-blue-800" required />
                 </div>
                 <motion.button
                   type="submit"
@@ -251,7 +251,7 @@ const BusinessPage = () => {
         </section>
       </main>
 
-      <footer className="bg-gray-800 text-white py-8">
+      <footer className="absolute bottom-0 w-full bg-blue-700 text-white py-4">
         <div className="container mx-auto px-6 text-center">
           <p>&copy; 2023 Flash. Todos los derechos reservados.</p>
         </div>
