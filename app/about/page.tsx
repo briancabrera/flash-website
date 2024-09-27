@@ -36,11 +36,11 @@ export default function AboutPage() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-blue-600 text-white">
+    <div className="relative min-h-screen bg-blue-600 text-white">
       <Navbar />
-      <main className="pt-20">
-        <section ref={heroRef} className="relative py-20 overflow-hidden">
-          <FloatingLightningBolts isVisible={isHeroVisible} boltCount={75} />
+      <main className="relative z-10">
+        <section ref={heroRef} className="hero relative min-h-screen flex items-center justify-center overflow-hidden">
+          <FloatingLightningBolts isVisible={isHeroVisible} boltCount={100} />
           <div className="container mx-auto px-6 relative z-10">
             <motion.h1 
               className="text-4xl md:text-5xl font-bold mb-8 text-center"
@@ -69,7 +69,7 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-      <footer className="bg-gray-800 text-white py-8 mt-20">
+      <footer className="absolute bottom-0 w-full bg-blue-700 text-white py-4">
         <div className="container mx-auto px-6 text-center">
           <p>&copy; 2023 Flash. Todos los derechos reservados.</p>
         </div>
